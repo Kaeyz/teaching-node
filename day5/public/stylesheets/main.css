@@ -1,0 +1,24 @@
+body {
+  background: linear-gradient(65deg, #663399, #ffc600)
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80vh
+}
+
+input {
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+input[type="button"] {
+  background: red;
+  margin-left: auto;
+}

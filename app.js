@@ -1,4 +1,4 @@
-var { add } = require('./day1.js')
+let  day1  = require('./day1')
 
 // import moduleName from 'module';
 // import { originalName as alias } from 'module';
@@ -9,4 +9,4 @@ var { add } = require('./day1.js')
 // console.log(typeof Number(process.argv[3]))
 
 
-add(+process.argv[2], +process.argv[3], +process.argv[4])
+// add(+process.argv[2], +process.argv[3], +process.argv[4])
