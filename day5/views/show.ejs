@@ -1,13 +1,19 @@
 <% include partials/header.ejs %>
 
-<h2>Show User Page</h2>
-<h5><a href="/"> &lt;- go back</a></h5>
+  <h2>Show User Page</h2>
+  <h5>
+    <a href="/"> &lt;- go back</a>
+  </h5>
 
-<%= user.name %>
-<br>
-<%= user.email %>
+  <br><%= users.length %>
 
-<br>
-<br>
+    <ul>
+      <% users.forEach((user) => { %>
+        <li>
+          <%= user.name %> -
+          <a href="mailto:<%= user.email %>"><strong><%= user.email %></strong></a>
+        </li>
+      <% }) %>
+    </ul>
 
-<% include partials/footer.ejs %>
+  <% include partials/footer.ejs %>

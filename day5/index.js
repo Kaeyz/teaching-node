@@ -6,6 +6,11 @@ app.use(express.static('public'))
 // app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+let users = [
+  { name: 'setemi', email: 'setemiojo@gmail.com' },
+  { name: 'setemi', email: 'setemiojo@gmail.com' },
+  { name: 'ayo', email: 'ayo@gmail.com' }
+]
 
 app.get('/', (req, res) => {
   res.render('home.ejs')
@@ -16,14 +21,13 @@ app.get('/register', (req, res) => {
 });
 
 app.post('/register', (req, res) => {
-  let user = []
   const {name, email} = req.body
 
-  user.push({name: name, email: email})
+  users.push({name: name, email: email})
 
-  console.log(user);
+  console.log(users);
 
-  res.render('show.ejs', { user: req.body });
+  res.render('show.ejs', { users });
 });
 
 app.listen(3000, () => {

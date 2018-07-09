@@ -15,8 +15,8 @@ req.locals.name = 'Flavio'
 // * Response
 // * Routing and named parameters
 // * using regular expression to match a path
-app.get('/post/', (req, res) => { });
 
+app.get('/post/', (req, res) => {})
 // * Middleware
 const myMiddleware = (req, res, next) => {
   /* ... */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rest Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>RESTful Routes</h1>
+      <p>A table of all 7 RESTful routes</p>
+      <div class="row">
+        <br>
+
+        <table class="table table-bordered">
+          <caption>RESTful routes Table</caption>
+          <thead>
+            <tr class="table-dark">
+              <td>Name</td>
+              <td>Path</td>
+              <td>HTTP Verb</td>
+              <td>Purpose</td>
+              <td>Mongoose Method</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Index</td>
+              <td>/dogs</td>
+              <td>GET</td>
+              <td>List all dogs</td>
+              <td><pre>Blog.find()</pre></td>
+            </tr>
+            <tr class="table-success">
+              <td>New</td>
+              <td>/dogs/new</td>
+              <td>GET</td>
+              <td>Show new dog form</td>
+              <td>N/A</td>
+            </tr>
+            <tr class="table-success">
+              <td>Create</td>
+              <td>/dogs</td>
+              <td>POST</td>
+              <td>Create a new dog, then redirect somewhere</td>
+              <td><pre>Blog.create()</pre></td>
+            </tr>
+            <tr class="table-info">
+              <td>Show</td>
+              <td>/dogs/:id</td>
+              <td>GET</td>
+              <td>Show info about one specific dog</td>
+              <td><pre>Blog.findById</pre></td>
+            </tr>
+            <tr>
+              <td>Edit</td>
+              <td>/dogs/:id/edit</td>
+              <td>GET</td>
+              <td>Show edit form for one dog</td>
+              <td><pre>Blog.findById()</pre></td>
+            </tr>
+            <tr>
+              <td>Update</td>
+              <td>/dogs/:id</td>
+              <td>PUT</td>
+              <td>Update a particular dog, then redirect somewhere</td>
+              <td><pre>Blog.findByIdAndUpdate()</pre></td>
+            </tr>
+            <tr class="table-danger">
+              <td>Destroy</td>
+              <td>/dogs/:id</td>
+              <td>DELETE</td>
+              <td>Delete a particular dog, then redirect somewhere</td>
+              <td><pre>Blog.findByIdAndRemove()</pre></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

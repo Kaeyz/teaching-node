@@ -9,9 +9,9 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 // Styles and Partials
 //// app.use(express.static('public')) - This specifically will serve all the files that we have in our public folder.
 // *GET /style.css etc
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public'))
 //  * // GET /static/style.css etc.
-app.use('/static', express.static(__dirname + '/public'));
+app.use('/static', express.static(__dirname + '/public'))
 /*
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/files'));
