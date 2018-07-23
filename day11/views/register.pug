@@ -1,0 +1,27 @@
+link(href="style.css", rel="stylesheet")
+
+h2= title
+
+
+form(action="/register" method="post")
+  label(for="username") Username
+  input(name="username" type="text" placeholder="Enter a nice username")
+
+  label(for="email") Email
+  input(name="email" type="email" placeholder="Enter a nice email")
+
+  label(for="password") Password
+  input(name="password" type="password" placeholder="Enter a nice password")
+
+  label(for="confirm-password") Confirm-Password
+  input(name="confirm-password" type="password" placeholder="Re-enter your Password")
+
+  button(type="submit") Submit
+
+h2 OutSide
+
+a(href="/register") Sign Up!!! <br/>
+
+a(href="/login") Log in<br/>
+
+a(href="/logout") Log out<br/>
